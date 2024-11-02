@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+    <title>CRUD Sencillo</title>
+</head>
+
+<body class="tema">
+    <div class="container-l">
+        <img src="https://sistemasoperativosunipoli.s3.us-east-1.amazonaws.com/Imagen%20de%20WhatsApp%202024-10-31%20a%20las%2020.52.56_a3b4f20d.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAU5LH5PVCX6TCFAB5%2F20241102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241102T010533Z&X-Amz-Expires=300&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDoaCXVzLWVhc3QtMSJHMEUCIAQtXy7Nkg%2Ff%2FEifjQoELecc%2F6R%2BzWQAi2Io%2BAI4rwjBAiEA7aHGDThde6r559%2Br%2FblnlupoFxplEgce%2Brch7pTf96kqiAMIsv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgwzMzc5MDk3NDI5MTciDNgSsEm4YrMSZ%2BHivircAg2Tcq2LVM%2FfeB0y1eRGiSf57O5cBlP9fLp4IexGrMgOytOB4sPKJcIeSr%2B9gpfN9zpMiWB3Y1bXKjFIED3R5nXEFZMNsnS3u2h3zBNMGOOtHbAV7HaR82AwHRXSHtOVHM%2BOTltBEHRSBPha6Q%2B%2BZj1hxkGWVscR67BjnVRUJxbnW0VdqGM1e5S8QOU5vd3GH9WlxKhk7wWqEjdmyoM4r43hSurFHVuuxH2GflUk0cEp0NaNgu8lDxBD1qp8Zw9KgedIM1p%2FnYzq14dWsk4EXAkKAQn58%2FS7mZ0fzpPeVGnWwzU0hgu3sv4kVbBwLbuovZ2c66qSrg22rDcXf2WeL8okwJfMnC1ZwrqZx3D8yFy26gnSupaY3BuLAMnqRIblKz1EmQtHGZ1AY1L2LnH%2FO7MAT9xF1kOFrbNAu78VB1NEhSYsM4KfyldaJqKPFwPLoviPK9yYhtTk02q25jDCxpW5BjqzAlC8f5vmFDcOPswOFNhDcAK2S3YWZgZutAClWEvXZ%2FUCj8atZfJQYXPOolEhNMXwWeCiVnKtJG2yhErIBySuXdMJFS4OVh7uwR8l2QW4Aq%2B5FI%2FU5cgucCg7WX6G5kVh6jR25nBZzn1qqh4aKaudAy%2F9TMP1kmuVik02%2FazbxaIfz%2FxxRS533qWEgokxJ9xRrohw6z%2FKyanlvurr2%2F0PCrZ6v5Ds%2FezJdKbf2SWBsje51guznWyALmAw8Kx%2Fhr%2BnkoH67NVV3mLDQ%2BuTfJf5FtlTj6exM3vaIZwUgY0nOpJrIdOjWP4vM4cDCX6BsmAhUGnZDVFgFnNT2FbrLvPhHJfaTiNDk3LmLphACjDDXLwMjoJqTcat%2F6qOGOWEaFjes19lkm83cdE2JfFsNCZg2JNz288%3D&X-Amz-Signature=17ec15a005f6e5d85a9ee536c97d95e4ad5f763b2af3ce1bb95788dd15503fcd&X-Amz-SignedHeaders=host&response-content-disposition=inline" alt="">
+    </div>
+    
+    <div class="container">
+        <form id="crud-form">
+            <h2>Formulario CRUD</h2>
+            <label for="product-id">ID del Producto</label>
+            <input type="text" id="product-id" placeholder="Ingresar ID del Producto">
+            
+            <label for="product-name">Nombre del Producto</label>
+            <input type="text" id="product-name" placeholder="Ingresar Nombre del Producto">
+            
+            <label for="product-description">Descripción del Producto</label>
+            <input type="text" id="product-description" placeholder="Ingresar Descripción del Producto">
+            
+            <label for="product-price">Precio del Producto</label>
+            <input type="text" id="product-price" placeholder="Ingresar Precio del Producto">
+            
+            <div class="button-group">
+                <button type="button" id="create-button">Crear</button>
+                <button type="button" id="read-button">Buscar</button>
+                <button type="button" id="update-button">Actualizar</button>
+                <button type="button" id="delete-button">Eliminar</button>
+            </div>
+        </form>
+        
+        <h2>Lista de Productos</h2>
+        <ul id="product-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
